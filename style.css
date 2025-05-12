@@ -20,8 +20,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--Grey-900);
-  min-height: 100vh;
+
+}
+
+body{
+    background-color: var(--Grey-900);
 }
 
 .holder{
