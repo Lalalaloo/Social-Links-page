@@ -20,6 +20,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 
 }
 
@@ -27,21 +28,26 @@ body{
     background-color: var(--Grey-900);
 }
 
-.holder{
-    display: flex;
-    flex-direction: column;
-    max-width: 375px;
-    width:60%;
-    background-color:var(--Grey-800);
-    border-radius: 10px;
+.holder {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  min-width: 280px;
+  max-width: 375px;
+  background-color: var(--Grey-800);
+  border-radius: 10px;
+  gap: 12px;
+  margin: 0 16px; 
 }
+
 
 .profile{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    
+    padding:30px 30px 16px 30px;
+    gap: 12px;
 }
 
 .pfp{
@@ -65,21 +71,23 @@ body{
     color: var(--Green);
     font-weight: 600;
     font-size: 14px;
-    margin-top:5px;
+    margin-top:8px;
 }
 
 .bio{
     color: white;
     font-size: 14px;
+    margin: 20px 0 2px 0;
 }
 
 .links{
     display: flex;
     flex-direction: column;
     list-style: none;
-    gap: 1rem;
+    gap: 15px;
     width: 100%;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
+    margin: 0;
 }
 
 .link_items a{
@@ -94,6 +102,11 @@ body{
     font-weight: 600;
     font-size: 14px;
 }
+
+.link_items a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 
 .link_items a:hover{
     color: black;
